@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+   <meta charset="UTF-8"> 
+   <title>Dashboard Cloud</title> 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+   <style>
+body { font-family: sans-serif; background-color: #f4f4f4; padding: 20px; }
+.contenedor { display: flex; gap: 20px; flex-wrap: wrap; }
+
+/* Estilos de las tarjetas */
+.card {
+background: white;
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 2px 5px  rgba(0,0,0,0.1);
+width: 250px;
+}
+.card h3 { margin-top: 0; color: #333; }
+.tipo { font-weight: bold; color: #555; font-size: 0.9em; }
+
+/* Colores para el estado */
+.activo { color: green; font-weight: bold; }
+.inactivo { color: red; font-weight: bold; } 
+   </style> 
+</head>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container">
+            <h1 class="navbar-brand fw-bold">MAURO SAN ROMAN MARTINEZ</h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://mauro.grupoctic.com/5C/WEB/Trabajos_Web.html">Atras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="https://mauro.grupoctic.com/5C/Principal.html">Trabajos de 5C</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/Mauro-San-Roman?tab=repositories">Mis
+                                repositorios</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav><br> 
+<body> 
+   <h1>Mis Servicios en la Nube</h1> 
+   <button onclick="cargarServicios()">Actualizar Estado</button> 
+   <hr>
+
+<!-- Aquí se inyectarán las tarjetas dinámicamente --> 
+   <div id="contenedor-servicios" class="contenedor"></div> 
+   <script src="app.js"></script> 
+</body> 
+</html>

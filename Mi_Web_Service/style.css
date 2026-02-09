@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+h1,p{
+    color: #e5e5e5;
+}
+.servicio-tarjeta {
+    background-color:#2a2a2a;
+    border: 3px solid #37ff30;
+    border-radius: 8px; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px; 
+    width: 400px;
+}
+
+.titulo-servicio {
+    font-size: xx-large;
+    color: #00ff2a; /* Color naranja estilo Dragon Ball */
+}
+main{
+    text-align: center;
+}
+
+#buscar{
+    background-color: #007714;
+    color: #e5e5e5;
+    width: 100px;
+    height: 35px;
+    font-size:small;
+}
+#infoDescripcion{
+    color: #e5e5e5;
+    font-size: x-large;
+}
+
+#contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}

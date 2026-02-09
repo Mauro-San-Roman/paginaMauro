@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>API DummyJson</title>
+</head>
+
+<body class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container">
+            <h1 class="navbar-brand fw-bold">MAURO SAN ROMAN MARTINEZ</h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="https://mauro.grupoctic.com/">Atras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="https://mauro.grupoctic.com/5C/Principal.html">Trabajos de 5C</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Trabajos 4C</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://mauro.grupoctic.com/pagPersonal.html">Informacion Personal</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://mauro.grupoctic.com/pagAcademica.html">Informacion Academica</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://mauro.grupoctic.com/Ejercicios.html">Ejercicios</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/Mauro-San-Roman?tab=repositories">Mis
+                                repositorios</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav><br>
+    <header class="container text-center py-4">
+        <h1>Practica DummyJson</h1>
+    </header>
+    <main class="container text-center py-4">
+        <input type="text" id="busqueda" placeholder="Buscar producto..." class="w-50">
+        <button type="submit" onclick="buscarProducto()" class="btn btn-primary">Buscar</button>
+        <button type="submit" onclick="window.location.href=`./agregar.html`" class="btn btn-secondary">Agregar Producto</button>
+
+        <select name="categoria" id="filtroCategorias" onchange="buscarProductoCategoria()" >
+
+        </select>
+
+        <select name="orden" id="ordenarPorPrecio" onchange="ordenarPorPrecio()" >
+            <option value="asc">De Menor a Mayor precio</option>
+            <option value="desc">De Mayor a Menor precio</option>
+        </select><br><br>
+
+        <div id="contenedor-productos" class="row row-cols-1 row-cols-md-3 g-4">
+
+        </div>
+        <div id="paginacion">
+            
+        </div>
+    </main>
+    
+    <script src="./main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+#map { 
+    height: 50vh;
+    width: 50%;
+    display: block;
+    margin: auto;
+    border: 2px solid blueviolet;
+    border-radius: 7px;
+}

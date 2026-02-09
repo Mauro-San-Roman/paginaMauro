@@ -72,7 +72,7 @@ const guardarProducto = () => {
         `;
         // REDIRECCION A LA PAGINA PRINCIPAL
         setTimeout(() => {
-            window.location.href = "https://mauro-san-roman.github.io/Catalogo_DummyJson/index.html";
+            window.location.href = "https://mauro-san-roman.github.io/paginaMauro/Catalogo_DummyJson/index.html";
         }, 2500);
 
     })

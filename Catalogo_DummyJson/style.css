@@ -1,0 +1,17 @@
+/* Para suavizar las esquinas y sombras */
+.card {
+    transition: transform 0.2s;
+}
+
+#detalleContenedor img {
+    transition: transform 0.3s ease;
+}
+
+#detalleContenedor img:hover {
+    transform: scale(1.05); /* Efecto de zoom suave en la imagen principal */
+}
+
+.badge {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
